@@ -1,1 +1,272 @@
 #code file
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aanchal - Your Home Away from Home</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --text-color: #34495e;
+            --background-color: #ecf0f1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            max-width: 800px;
+        }
+
+        h1, h2 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        .section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 2rem;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonials {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .testimonial-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .testimonial {
+            background-color: white;
+            color: var(--text-color);
+            border-radius: 10px;
+            padding: 2rem;
+            max-width: 300px;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            h1, h2 {
+                font-size: 2.5rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#food">Food</a></li>
+            <li><a href="#safety">Safety</a></li>
+            <li><a href="#stays">Stays</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#study">Study</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="parallax" style="background-image: url('https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=2000&q=80');">
+        <div class="content">
+            <h1>Welcome to Aanchal</h1>
+            <p>Your home away from home. Find comfort, safety, and community for students living far from family.</p>
+            <a href="#rooms" class="btn">Get Started</a>
+        </div>
+    </header>
+
+    <section id="rooms" class="section" style="background-color: #f0f0f0;">
+        <div class="card">
+            <h2>Comfortable Rooms</h2>
+            <p>Find the perfect room that feels just like home, with all the amenities you need.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="food" class="parallax" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=2000&q=80');">
+        <div class="content">
+            <h2>Delicious Food</h2>
+            <p>Enjoy a variety of tasty and nutritious meals, catering to all dietary preferences.</p>
+            <a href="#" class="btn">View Menu</a>
+        </div>
+    </section>
+
+    <section id="safety" class="section" style="background-color: #e6f3ff;">
+        <div class="card">
+            <h2>Safety First</h2>
+            <p>Rest easy knowing that your safety and security are our top priorities.</p>
+            <a href="#" class="btn">Safety Measures</a>
+        </div>
+    </section>
+
+    <section id="stays" class="parallax" style="background-image: url('https://images.unsplash.com/photo-1551927411-95e412943b58?auto=format&fit=crop&w=2000&q=80');">
+        <div class="content">
+            <h2>Flexible Stays</h2>
+            <p>Choose from long-term or short-term stay options to suit your needs.</p>
+            <a href="#" class="btn">Book Now</a>
+        </div>
+    </section>
+
+    <section id="community" class="section" style="background-color: #e6fff2;">
+        <div class="card">
+            <h2>Community Events</h2>
+            <p>Connect with fellow students through regular social events and activities.</p>
+            <a href="#" class="btn">Event Calendar</a>
+        </div>
+    </section>
+
+    <section id="study" class="parallax" style="background-image: url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=2000&q=80');">
+        <div class="content">
+            <h2>Study Spaces</h2>
+            <p>Access quiet and well-equipped study areas to focus on your academics.</p>
+            <a href="#" class="btn">Reserve Space</a>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section testimonials">
+        <div>
+            <h2>What Our Students Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <p>"Aanchal made my transition to a new city so much easier. I feel safe and at home here!"</p>
+                    <p><strong>- Sarah, 20</strong></p>
+                </div>
+                <div class="testimonial">
+                    <p>"The community events helped me make friends quickly. It's more than just a place to stay."</p>
+                    <p><strong>- Rahul, 22</strong></p>
+                </div>
+                <div class="testimonial">
+                    <p>"The food is amazing, and the study spaces have helped me improve my grades!"</p>
+                    <p><strong>- Emily, 19</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aanchal. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
